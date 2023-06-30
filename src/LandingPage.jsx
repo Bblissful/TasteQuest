@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 export const LandingPage = () => {
   return (
     <div className="">
@@ -61,7 +63,7 @@ export const LandingPage = () => {
                 can gather, connect, and create lasting memories. Whether you
                 seek a romantic dinner for two, a joyous gathering of loved
                 ones, or a vibrant social event, we take pride in ensuring that
-                every experience at Héstia is nothing short of extraordinar
+                every experience at Héstia is nothing short of extraordinary
               </p>
             </div>
           </div>
@@ -74,18 +76,73 @@ export const LandingPage = () => {
         <p className="pb-3 text-center justify-center text-sm text-[#502828]">
           Menu available from 7 countries
         </p>
-        <div>
-          <figure className="w-1/2 m-7 md:w-1/4">
-            <img
-              src="Images/sect1.png"
-              alt=""
-              className="md:w-[50vh] w-[35vh]"
-            />
-            <img src="Images/sect1a.png" alt="" className="relative md:w-[50vh] w-[35vh]" />
-            <div className="absolute top-[-3] left-0">
-                <h2>Italy Specials</h2>
-            </div>
-          </figure>
+        <div className="flex ">
+          <div className="w-1/2 md:w-1/4 text-center">
+            <figure className="m-2">
+              <img
+                src="Images/sect1.png"
+                alt=""
+                className="md:w-[70vh] w-[35vh]"
+              />
+              <img
+                src="Images/sect1a.png"
+                alt=""
+                className="relative md:w-[70vh] w-[35vh]"
+              />
+            </figure>
+            <h2>Italy Specials</h2>
+            <Link to="#">View menu</Link>
+          </div>
+          <div className="w-1/2 md:w-1/4 text-center">
+            <figure className="m-2">
+              <img
+                src="Images/sect2.png"
+                alt=""
+                className="md:w-[50vh] w-[35vh]"
+              />
+              <img
+                src="Images/sect2a.png"
+                alt="flag"
+                className="md:w-[50vh] w-[35vh]"
+              />
+            </figure>
+            <h2>India Specials</h2>
+            <Link to="#">View menu</Link>
+          </div>
+        </div>
+        <div className="flex">
+          <div className="w-1/2 md:w-1/4 text-center">
+            <figure className="m-2">
+              <img
+                src="Images/sect3.png"
+                alt=""
+                className="md:w-[50vh] w-[35vh]"
+              />
+              <img
+                src="Images/sect3a.png"
+                alt="flag"
+                className="md:w-[50vh] w-[35vh]"
+              />
+            </figure>
+            <h2>Mexico Specials</h2>
+            <Link to="#">View menu</Link>
+          </div>
+          <div className="w-1/2 md:w-1/4 text-center">
+            <figure className="m-2">
+              <img
+                src="Images/sect4.png"
+                alt=""
+                className="md:w-[50vh] w-[35vh]"
+              />
+              <img
+                src="Images/sect4a.png"
+                alt="flag"
+                className="md:w-[50vh] w-[35vh]"
+              />
+            </figure>
+            <h2>China Specials</h2>
+            <Link to="#">View menu</Link>
+          </div>
         </div>
       </section>
     </div>
